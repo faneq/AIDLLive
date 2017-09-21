@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.example.fanenqian.aidllive"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!--AIDL_Service也可以称为RemoteService-->
+        <!--   注意配置远程服务启动为一个新的进程，为新进程命名为    android:process=".remoteService"-->
+        <service
+            android:name=".HostService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=".remoteService"/>
+        <service
+            android:name=".LocalService"
+            android:enabled="true"
+            android:exported="true"/>
+
+    </application>
+
+</manifest>
