@@ -8,6 +8,6 @@
 android：process=“进程名”
 * 6：进程A服务绑定进程B服务，进程B服务绑定进程A服务
 不杀不死杀不死
-
+* 7：手机开机和电量等系统广播自动激活Service
 ![icon](http://img.blog.csdn.net/20170921181542696?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZmFuZW5xaWFu/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
 
